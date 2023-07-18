@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@font-face {
+	font-family: 'LeksaSansPro'; 
+	src: url(/test/fonts/LeksaSansPro.ttf); 
+}
+
+.inner {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+}
+
+h5 {
+    font-family: 'LeksaSansPro';
+}
+
+.price {
+    display: flex;
+    width: 100%;
+    padding: 70px 50px;
+}
+
+.slider_main {
+    background: hsla(35, 38%, 91%, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.slider_main:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 560px;
+    height: 720px;
+    background: url(/test/img/2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -170px;
+}
+
+.right {
+    position: relative;
+    background: #fff;
+    height: 450px;
+    padding-left: 90px;
+}
+
+p, a {
+    font-family: Roboto;
+}
+
+.data {
+    background: hsla(210, 100%, 19%, 1);
+}
+
+.data p {
+    padding: 5px 40px;
+    font-weight: 300;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.name {
+    margin: 0;
+    color: hsla(210, 100%, 19%, 1);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.doctor {
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.doc {
+    margin: 0;
+    padding-top: 20px;
+    color: hsla(210, 100%, 19%, 1);
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.spec {
+    padding-top: 60px;
+    padding-left: 40px;
+}
+
+.spec h5 {
+    color: hsla(210, 100%, 19%, 1);
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    width: 60%;
+}
+
+.about {
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.about p {
+    font-size: 16px;
+    font-weight: 300;
+    color: hsla(210, 100%, 19%, 1);
+    margin: 0;
+    width: 70%;
+    line-height: 1.3;
+}
+
+.btn {
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.btn a {
+    background: hsla(40, 38%, 57%, 1);
+    padding: 6px 40px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+} 
+
+.left {
+    margin-right: -100px;
+    z-index: 999;
+}
+
+.slider_main .slick-initialized .slick-slide {
+    display: flex;
+}
+
+.slider_main .slick-dots {
+    bottom: 90px;
+    right: 230px;
+    width: 30%;
+}
+
+.slider_main .slick-next {
+    right: 255px;
+    top: unset;
+    bottom: 80px;
+    z-index: 9;
+}
+
+.slider_main .slick-prev {
+    left: unset;
+    top: unset;
+    bottom: 80px;
+    right: 570px;
+    z-index: 9;
+}
+
+.slider_main .slick-dots li button:before {
+    font-size: 10px;
+    color: hsla(40, 38%, 57%, 0.6);
+    opacity: 1;
+}
+
+.slider_main .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: hsla(210, 100%, 19%, 1);
+}
+
+.slider_main .slick-prev:before {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(/test/img/left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+    font-size: unset;
+    top: -15px;
+    left: -20px;
+}
+
+.slider_main .slick-next:before {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(/test/img/left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+    font-size: unset;
+    top: -15px;
+    right: -20px;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    
+    img {
+        width: 100%;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .spec h5 {
+        font-size: 28px;
+        width: 90%;
+    }
+
+    .about p {
+        width: 90%;
+    }
+
+    .spec {
+        padding-top: 30px;
+        padding-left: 40px;
+    }
+
+    .right {
+        height: 340px;
+    }
+
+    .data p {
+        font-size: 20px;
+    }
+
+    .doctor {
+        display: flex;
+        align-items: center;
+    }
+
+    .doc {
+        padding-top: 0;
+        padding-left: 40px;
+    }
+
+    .slider_main .slick-prev, .slider_main .slick-next {
+        bottom: 60px;
+    }
+
+    .slider_main .slick-dots {
+        bottom: 70px;
+        right: 265px;
+        width: 30%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .slider_main .slick-initialized .slick-slide {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .left {
+        margin-right: unset;
+        z-index: unset;
+        position: relative;
+    }
+
+    .right {
+        height: auto;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+    .data {
+        position: absolute;
+        top: 300px;
+    }
+
+    .slider_main .slick-prev {
+        left: 50px;
+        bottom: 15px;
+    }
+
+    .slider_main .slick-next {
+        right: 50px;
+        bottom: 15px;
+    }
+
+    .slider_main .slick-dots {
+        bottom: 20px;
+        right: 235px;
+        width: 40%;
+    }
+
+    .slider_main:before {
+        display: none;
+    }
+}
+
+
+@media (max-width: 430px) {
+
+    .price {
+        padding: 50px 20px;
+    }
+
+    .right {
+        padding-right: 20px;
+    }
+
+    .about, .doctor, .spec, .btn {
+        padding-left: 20px;
+    }
+
+    .data {
+        position: absolute;
+        top: 350px;
+    }
+
+    .slider_main .slick-next:before, .slider_main .slick-prev:before {
+        width: 30px;
+        height: 30px;
+    }
+
+    .slider_main .slick-dots {
+        bottom: 31px;
+        right: 65px;
+        width: 70%;
+    }
+
+    .slider_main .slick-dots li button:before {
+        font-size: 7px;
+    }
+
+}
+
+@media (max-width: 414px) {
+
+    .name {
+        font-size: 18px;
+    }
+
+    .doc {
+        font-size: 14px;
+    }
+
+    .spec h5 {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .about p {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 375px) {
+
+    .spec h5 {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .doctor {
+        display: flex;
+        align-items: unset;
+        flex-direction: column;
+    }
+
+    .doc {
+        padding-top: 9px;
+        padding-left: 0;
+    }
+
+    .data {
+        position: absolute;
+        top: 370px;
+    }
+
+    .data p {
+        font-size: 16px;
+    }
+
+    .slider_main .slick-next {
+        right: 30px;
+        bottom: 15px;
+    }
+
+    .slider_main .slick-prev {
+        left: 30px;
+        bottom: 15px;
+    }
+
+    .slider_main .slick-dots li button:before {
+        font-size: 5px;
+    }
+
+    .slider_main .slick-dots {
+        bottom: 33px;
+        right: 32px;
+        width: 80%;
+    }
+
+}
